@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "avro",
+  "fields": [
+    {"name": "IBAN", "type": "string"},
+    {"name": "Date", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "PaymentType", "type": "string"},
+    {"name": "Details", "type": "string"},
+    {"name": "MoneyOut", "type": "double"},
+    {"name": "MoneyIn", "type": "double"},
+    {"name": "Balance", "type": "double"}
+  ]
+}

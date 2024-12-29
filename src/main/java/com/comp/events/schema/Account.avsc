@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Account",
+  "namespace": "avro",
+  "fields": [
+    {"name": "Name", "type": "string"},
+    {"name": "Address", "type": "string"},
+    {"name": "SortCode", "type": "string"},
+    {"name": "AccountNo", "type": "string"},
+    {"name": "IBAN", "type": "string"},
+    {"name": "BIC", "type": "string"},
+    {"name": "Branch", "type": "string"},
+    {"name": "AccountType", "type": "string"}
+  ]
+}

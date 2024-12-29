@@ -1,0 +1,85 @@
+{
+  "type": "record",
+  "name": "EnrichedTransaction",
+  "namespace": "avro",
+  "fields": [
+    {
+      "name": "Transaction",
+      "type": {
+        "type": "record",
+        "name": "Transaction",
+        "fields": [
+          {
+            "name": "IBAN",
+            "type": "string"
+          },
+          {
+            "name": "Date",
+            "type": "long"
+          },
+          {
+            "name": "PaymentType",
+            "type": "string"
+          },
+          {
+            "name": "Details",
+            "type": "string"
+          },
+          {
+            "name": "MoneyOut",
+            "type": "double"
+          },
+          {
+            "name": "MoneyIn",
+            "type": "double"
+          },
+          {
+            "name": "Balance",
+            "type": "double"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Account",
+      "type": {
+        "type": "record",
+        "name": "Account",
+        "fields": [
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "Address",
+            "type": "string"
+          },
+          {
+            "name": "SortCode",
+            "type": "string"
+          },
+          {
+            "name": "AccountNo",
+            "type": "string"
+          },
+          {
+            "name": "IBAN",
+            "type": "string"
+          },
+          {
+            "name": "BIC",
+            "type": "string"
+          },
+          {
+            "name": "Branch",
+            "type": "string"
+          },
+          {
+            "name": "AccountType",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
